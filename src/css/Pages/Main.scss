@@ -1,0 +1,253 @@
+@mixin hoverStyles {
+  &:hover {
+    color: var(--bs-link-hover-color);
+    cursor: pointer;
+  }
+}
+
+.textLink {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* HEADER */
+.Main-header {
+  position: relative;
+  height: 100px;
+  border: 1px solid red;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #B3E5BE;
+  z-index: 2;
+
+  .logo {
+    position: absolute;
+    font-size: 30px;
+    left: 0;
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  .alarmNote {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+  }
+
+  .sidebar {
+    position: absolute;
+    right: 0;
+  }
+
+  .crew {
+    display: none;
+    position: fixed;
+    width: 100px;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .openedCrew {
+    position: fixed;
+    padding: 10px;
+    width: 250px;
+    height: 600px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: aqua;
+  }
+  
+  .UserInProject {
+    text-align: center;
+  }
+  
+  .UserInProjectProfileImg {
+    width: 110px;
+    height: 110px;
+    border-radius: 100px;
+    border: 1px solid red;
+  }
+}
+
+
+/* MAIN */
+.Main-mainbody {
+  position: relative;
+  display: flex;
+  min-height: calc(100vh - 100px);
+
+  .Main-interface {
+    position: relative;
+    left: 0;
+    width: 200px;
+    z-index: 1;
+    background-color: #B3E5BE;
+
+    .Main-notice {
+      position: absolute;
+      top: 1%;
+      left: 5%;
+      width: 90%;
+      height: 8%;
+      padding: 1%;
+      box-sizing: border-box;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      @include hoverStyles()
+    }
+
+    .Main-calendar {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      width: 90%;
+      height: 8%;
+      padding: 1%;
+      box-sizing: border-box;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      @include hoverStyles()
+    }
+
+    .Main-mydocument {
+      position: absolute;
+      top: 19%;
+      left: 5%;
+      width: 90%;
+      height: 8%;
+      padding: 1%;
+      box-sizing: border-box;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      @include hoverStyles()
+    }
+
+    .Main-myproject {
+      position: absolute;
+      top: 28%;
+      left: 5%;
+      width: 90%;
+      height: 8%;
+      padding: 1%;
+      box-sizing: border-box;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    // .textLink {
+    //   color: inherit;
+    //   text-decoration: inherit;
+    // }
+
+    .Main-notice-banner {
+      position: absolute;
+      bottom: 1%;
+      left: 5%;
+      width: 90%;
+      height: 100px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid red;
+      text-align: center;
+    }
+  }
+
+  /* Main Visual */
+
+  .Main-main {
+    position: relative;
+    border: 1px solid green;
+    border-radius: 5px;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F5FFC9;
+  
+    .Main-progress {
+      position: relative;
+      padding: 10px;
+      margin-top: 50px;
+      width: calc(100vw - 200px);
+      box-sizing: border-box;
+      border: 1px solid red;
+
+      .content {
+        overflow: auto;
+        margin: 10px;
+        height: 350px;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .test1 {
+          border: 1px solid red;
+          border-radius: 5px;
+        }
+      }
+    } 
+  }
+
+  .Main-Mydocument {
+    position: relative;
+    border: 1px solid green;
+    border-radius: 5px;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F5FFC9;
+
+    .Main-progress {
+
+      .myDocument {
+        position: relative;
+        margin: 10px 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 400px;
+        /* border: 1px solid red; */
+        border-radius: 5px;
+        font-size: 20px;
+      }
+
+      .myDocumentList {
+        border-bottom: 1px solid red;
+        margin: 10px;
+      }
+      
+      .myDocumentTitle {
+        margin: 0 50px;
+      }
+    }
+  }
+
+  .Main-projectname {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    padding: 0.5%;
+    box-sizing: border-box;
+    border: 1px solid red;
+    background-color: #F5FFC9;
+    border-radius: 5px;
+    z-index: 1;
+  }
+}

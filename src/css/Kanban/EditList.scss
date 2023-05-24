@@ -1,0 +1,27 @@
+.KanbanList {
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-wrap: wrap;
+  border: 1px solid red;
+
+  .kanbanListTitle {
+    padding: 3px;
+    min-width: 100px;
+    min-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .kanbanListDeadline {
+    padding: 3px;
+    min-width: 100px;
+    min-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+}

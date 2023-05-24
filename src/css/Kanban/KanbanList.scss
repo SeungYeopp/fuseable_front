@@ -1,0 +1,14 @@
+.kanbanListWrap {
+  position: relative;
+
+ .kanbanTitle {
+    min-width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    margin: 10px;
+    padding: 5px 0;
+    font-size: 20px;
+  }
+}

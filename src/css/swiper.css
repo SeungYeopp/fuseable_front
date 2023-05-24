@@ -1,0 +1,18 @@
+.swiper {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  box-sizing: border-box;
+
+}
+
+.swiper-slide {
+  top: 30%;
+}
+
+.swiper-pagination {
+  top: 70%;
+}

@@ -1,0 +1,77 @@
+.note_edit {
+  display:flex;
+  position: relative;
+
+  .note-content {
+    padding: 0;
+    width: 60%;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      display: block;
+      width: 80px;
+      text-align: center;
+      flex: 0 0 70px;
+    }
+  
+    .editNoteContent {
+      padding: 0 5px 0 0;
+    }
+  
+    #editTitle { 
+      min-width: 300px;
+      width: 80%;
+      min-height: 30px;
+      overflow: hidden;
+      padding: 2px;
+      box-sizing: border-box;
+    }
+    
+    #editDeadline {
+      min-width: 300px;
+      width: 90%;
+      min-height: 30px;
+      overflow: hidden;
+      padding: 2px;
+      box-sizing: border-box;
+    }
+    
+    #editContent {
+      min-width: 300px;
+      width: 80%;
+      min-height: 300px;
+      overflow: hidden;
+      padding: 2px;
+      box-sizing: border-box;
+    } 
+  }
+
+  .note-comment {
+    width: 40%;
+    padding: 0 0 0 5px;
+
+    #addComment {
+      width: 80%;
+    }
+
+    .commentContainer {
+
+
+      .commentContent {
+
+      }
+
+      .commentDelBtn {
+
+      }
+    }
+  }
+  
+}
+
+
+

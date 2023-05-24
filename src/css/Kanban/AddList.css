@@ -1,0 +1,17 @@
+.Add_btn {
+  width: 30px;
+  height: 20px;
+  background-color: lemonchiffon;
+  position: absolute;
+  right: 50%;
+}
+
+.openedModal {
+  position: fixed;
+  left: 220px;
+  top: 170px;
+  width: 80%;
+  height: 70%;
+  background-color: lightsalmon;
+  z-index: 10;
+}

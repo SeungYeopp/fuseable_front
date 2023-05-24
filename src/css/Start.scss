@@ -1,0 +1,82 @@
+/* TOP SIDE */
+.Start-header {
+  position: relative;
+  height: 100px;
+  background-color: bisque;
+  display: flex;
+  font-size: 16px;
+  border: .5px solid royalblue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  z-index: 1;
+
+  .logo {
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+  
+    img {
+      width: 220px;
+      height: 70px;
+      margin: 15px 0;
+    }
+  }
+
+  .ProfileImg {
+    position: absolute;
+    right: 0;
+    border-radius: 100px;
+    border: 0.5px solid red;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+/* MAIN SIDE */
+.Start-mainbody {
+  position: relative;
+
+  .userNickname {
+    border: .5px solid royalblue;
+    border-radius: 5px;
+    margin: 3px 0 3px;
+  }
+
+  .StartBtn {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .btn {
+      margin: 0 3px;
+    }
+  }
+}
+
+.Start-projectList {
+  position: relative;
+
+  .projectList {
+    display: flex;
+
+    img {
+      margin: 3px;
+    }
+
+    div {
+      width: 200px;
+      height: 30px;
+      margin-left: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    button {
+      height: 25px;
+      margin-left: 30px;
+      box-sizing: content-box;
+    }
+  }
+}
