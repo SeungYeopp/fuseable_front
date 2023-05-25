@@ -16,7 +16,7 @@ import Schedule from './Pages/schedule';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <Routes>
         <Route path='/' exact element={<Login />}></Route>
         <Route path='/redirect' element={<Redirect />}></Route>
@@ -29,6 +29,7 @@ const App = () => {
         <Route path='/main/editlistpage' element={<EditListPage />}></Route>
        </Routes>
     </BrowserRouter>
+    
   )
 }
 
