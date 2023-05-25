@@ -59,7 +59,7 @@ function EditNotice ({item}) {
     try {
       const res = await axios
       .delete(
-        `http://loc3.36.58.146alhost:8080/api/articles/${item.id}`,
+        `http://3.36.58.146:8080/api/articles/${item.id}`,
       )
       .then((response) => {
         console.log(response);
