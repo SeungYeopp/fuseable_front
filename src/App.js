@@ -19,14 +19,14 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' exact element={<Login />}></Route>
-        <Route path='./redirect' element={<Redirect />}></Route>
-        <Route path='./googleredirect' element={<GoogleRedirect />}></Route>
-        <Route path='./logout' element={<Logout />}></Route>
-        <Route path='./start' element={<Start />}></Route>
-        <Route path='./start/schedule' element={<Schedule />}></Route>
-        <Route path='./main' element={<Main />}></Route>
-        <Route path='./main/addlistpage' element={<AddListPage />}></Route>
-        <Route path='./main/editlistpage' element={<EditListPage />}></Route>
+        <Route path='/redirect' element={<Redirect />}></Route>
+        <Route path='/googleredirect' element={<GoogleRedirect />}></Route>
+        <Route path='/logout' element={<Logout />}></Route>
+        <Route path='/start' element={<Start />}></Route>
+        <Route path='/start/schedule' element={<Schedule />}></Route>
+        <Route path='/main' element={<Main />}></Route>
+        <Route path='/main/addlistpage' element={<AddListPage />}></Route>
+        <Route path='/main/editlistpage' element={<EditListPage />}></Route>
        </Routes>
     </BrowserRouter>
   )
