@@ -18,15 +18,15 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/home/ubuntu/fuseable_front/build/' exact element={<Login />}></Route>
-        <Route path='/home/ubuntu/fuseable_front/build/redirect' element={<Redirect />}></Route>
-        <Route path='/home/ubuntu/fuseable_front/build/googleredirect' element={<GoogleRedirect />}></Route>
-        <Route path='/home/ubuntu/fuseable_front/build/logout' element={<Logout />}></Route>
-        <Route path='/home/ubuntu/fuseable_front/build/start' element={<Start />}></Route>
-        <Route path='/home/ubuntu/fuseable_front/build/start/schedule' element={<Schedule />}></Route>
-        <Route path='/home/ubuntu/fuseable_front/build/main' element={<Main />}></Route>
-        <Route path='/home/ubuntu/fuseable_front/build/main/addlistpage' element={<AddListPage />}></Route>
-        <Route path='/home/ubuntu/fuseable_front/build/main/editlistpage' element={<EditListPage />}></Route>
+        <Route path='/' exact element={<Login />}></Route>
+        <Route path='./redirect' element={<Redirect />}></Route>
+        <Route path='./googleredirect' element={<GoogleRedirect />}></Route>
+        <Route path='./logout' element={<Logout />}></Route>
+        <Route path='./start' element={<Start />}></Route>
+        <Route path='./start/schedule' element={<Schedule />}></Route>
+        <Route path='./main' element={<Main />}></Route>
+        <Route path='./main/addlistpage' element={<AddListPage />}></Route>
+        <Route path='./main/editlistpage' element={<EditListPage />}></Route>
        </Routes>
     </BrowserRouter>
   )
