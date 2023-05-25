@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const GoogleLogin = () => {
   // 카카오 개발자 앱 키 선언
-  const KAKAO_AUTH_URI = `http://43.201.29.208:3000/googleredirect?code=`;
+  const KAKAO_AUTH_URI = `http://fuseable.cloud:3000/googleredirect?code=`;
   // 인가코드 받아오기
   const code = new URL(window.location.href).searchParams.get("code");
 
