@@ -15,7 +15,7 @@ function ScheduleAll() {
     {try {
       const res = await axios
       .get(
-        `http://3.36.58.146:8080/api/schedule/readall/${selectedProjectId}`
+        `http://back.fuseable.monster:8080/api/schedule/readall/${selectedProjectId}`
       )
       .then((response) => 
       {

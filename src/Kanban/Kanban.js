@@ -19,7 +19,7 @@ function Kanban() {
     {try {
       const res = await axios
       .get(
-        `http://3.36.58.146:8080/api/project/${userCode}/${selectedProjectId}`
+        `http://back.fuseable.monster:8080/api/project/${userCode}/${selectedProjectId}`
       )
       .then((response) => 
       {

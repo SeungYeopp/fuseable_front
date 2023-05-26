@@ -20,7 +20,7 @@ const KakaoLogin = () => {
           // 백엔드 주소 뒤에 인가코드 붙여서 GET 설정
           // 백엔드는 이 주소를 통해 뒤에 붙여져있는 인가코드를 전달 받게 된다.
           .get(
-            `http://3.36.58.146:8080/api/oauth/token?code=${code}`
+            `http://back.fuseable.monster:8080/api/oauth/token?code=${code}`
           )
           // 백엔드 쪽에서 보내준 응답 확인
           .then((response) => {
@@ -49,7 +49,7 @@ const KakaoLogin = () => {
           // 이때, post가 아닌 get으로 접근한다.
           // 접근 주소는 백엔드에서 설정한 주소로 한다.
           .get(
-            "http://3.36.58.146:8080/api/me",
+            "http://back.fuseable.monster:8080/api/me",
             {
               // 헤더값에는 받아온 토큰을 Authorization과 request 에 담아서 보낸다/
               headers: {

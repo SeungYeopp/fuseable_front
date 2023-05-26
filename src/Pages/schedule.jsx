@@ -19,7 +19,7 @@ function Schedule() {
     {try {
       const res = await axios
       .get(
-        `http://3.36.58.146:8080/api/schedule/read/${userId}`
+        `http://back.fuseable.monster:8080/api/schedule/read/${userId}`
       )
       .then((response) => 
       {
@@ -53,7 +53,7 @@ function Schedule() {
     try {
       const res = await axios
       .post(
-        `http://3.36.58.146:8080/api/schedule/update/${scheduleId}`,
+        `http://back.fuseable.monster:8080/api/schedule/update/${scheduleId}`,
         {
           checkBox: scheduleTime.join(''),
         }

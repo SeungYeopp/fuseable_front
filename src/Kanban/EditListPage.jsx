@@ -61,7 +61,7 @@ function EditListPage () {
     {try {
       const res = await axios
       .get(
-        `http://3.36.58.146:8080/api/project/main/read/${userId}/${selectedProjectId}/${selectedNoteId}`
+        `http://back.fuseable.monster:8080/api/project/main/read/${userId}/${selectedProjectId}/${selectedNoteId}`
       )
       .then((response) => 
       {
@@ -158,7 +158,7 @@ function EditListPage () {
     try {
       const res = await axios
       .get (
-        `http://3.36.58.146:8080/api/project/main/delete/${selectedProjectId}/${selectedArrayId}`
+        `http://back.fuseable.monster:8080/api/project/main/delete/${selectedProjectId}/${selectedArrayId}`
       )
       .then ((response) => 
         console.log("Delete Response : ", response)
@@ -202,7 +202,7 @@ function EditListPage () {
     try {
       const res = await axios
       .post (
-        `http://3.36.58.146:8080/api/project/main/update/${userId}/${selectedProjectId}/${selectedNoteId}`,
+        `http://back.fuseable.monster:8080/api/project/main/update/${userId}/${selectedProjectId}/${selectedNoteId}`,
         formData,
       )
       .then ((response) => 
@@ -274,7 +274,7 @@ function EditListPage () {
     try {
       const res = await axios
       .get (
-        `http://3.36.58.146:8080/api/project/main/mynote/${userId}/${selectedNoteId}/${fileId}`
+        `http://back.fuseable.monster:8080/api/project/main/mynote/${userId}/${selectedNoteId}/${fileId}`
       )
       .then ((response) => 
         console.log("Edit Response : ", response)
@@ -379,7 +379,7 @@ function EditListPage () {
       try {
         const res = await axios
         .post(
-          `http://3.36.58.146:8080/api/comments/${selectedNoteId}`,
+          `http://back.fuseable.monster:8080/api/comments/${selectedNoteId}`,
           data
         )
         .then((response) => {
@@ -406,7 +406,7 @@ function EditListPage () {
     try {
       const res = await axios
       .delete(
-        `http://3.36.58.146:8080/api/comments/${userId}/${commentId}`
+        `http://back.fuseable.monster:8080/api/comments/${userId}/${commentId}`
       )
       .then((response) => {
         console.log("Delete Comment: ", response);
@@ -460,7 +460,7 @@ function EditListPage () {
     try {
       const res = await axios
       .post(
-        `http://3.36.58.146:8080/api/project/main/note/download`,
+        `http://back.fuseable.monster:8080/api/project/main/note/download`,
         data,
         {responseType: 'blob'}
       )
@@ -589,7 +589,7 @@ function EditListPage () {
     try {
       const res = await axios
       .get(
-        `http://3.36.58.146:8080/api/project/invite/${userId}/${selectedProjectId}`
+        `http://back.fuseable.monster:8080/api/project/invite/${userId}/${selectedProjectId}`
       )
       .then((response) => {
           console.log("InviteCode: ", response);
@@ -621,7 +621,7 @@ function EditListPage () {
     {try {
       const res = await axios
       .get(
-        `http://3.36.58.146:8080/api/project/note/alarmNote/${selectedProjectId}`
+        `http://back.fuseable.monster:8080/api/project/note/alarmNote/${selectedProjectId}`
       )
       .then((response) => 
       {

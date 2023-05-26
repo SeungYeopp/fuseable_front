@@ -60,7 +60,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://3.36.58.146:8080",
+  "proxy": "http://back.fuseable.monster:8080",
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.21.4",
     "@babel/preset-react": "^7.18.6",

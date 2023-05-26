@@ -32,7 +32,7 @@ function EditNotice ({item}) {
     try {
       const res = await axios
       .put(
-        `http://3.36.58.146:8080/api/articles/${item.id}`,
+        `http://back.fuseable.monster:8080/api/articles/${item.id}`,
         {
           title: textTitle,
           content: textContent,
@@ -59,7 +59,7 @@ function EditNotice ({item}) {
     try {
       const res = await axios
       .delete(
-        `http://3.36.58.146:8080/api/articles/${item.id}`,
+        `http://back.fuseable.monster:8080/api/articles/${item.id}`,
       )
       .then((response) => {
         console.log(response);

@@ -83,7 +83,7 @@ function EditProjectList({item}) {
     try {
       const res = await axios
       .post(
-        `http://3.36.58.146:8080/api/project/update/${userCode}/${item.id}`,
+        `http://back.fuseable.monster:8080/api/project/update/${userCode}/${item.id}`,
         {title},
       )
       .then((response) => console.log(response))
@@ -104,7 +104,7 @@ function EditProjectList({item}) {
     try {
       const res = await axios
       .get(
-        `http://3.36.58.146:8080/api/project/delete/${userCode}/${item.id}`,
+        `http://back.fuseable.monster:8080/api/project/delete/${userCode}/${item.id}`,
       )
       .then((response) => {
         console.log(response);
@@ -128,7 +128,7 @@ function EditProjectList({item}) {
     try {
       const res = await axios
       .get(
-        `http://3.36.58.146:8080/api/project/bookmark/${userCode}/${item.id}`,
+        `http://back.fuseable.monster:8080/api/project/bookmark/${userCode}/${item.id}`,
       )
       .then((response) => console.log(response))
     }

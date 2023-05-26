@@ -25,7 +25,7 @@ function NoticeBanner() {
     {try {
       const res = await axios
       .get(
-        `http://3.36.58.146:8080/api/articles/list/bookmark/${selectedProjectId}`
+        `http://back.fuseable.monster:8080/api/articles/list/bookmark/${selectedProjectId}`
       )
       .then((response) => 
       {
