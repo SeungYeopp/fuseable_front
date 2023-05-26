@@ -49,7 +49,7 @@ function Start () {
     try {
       const res = await axios({
         method: 'post',
-        url: `http://back.fuseable.monster:8080/api/project/create/${userCode}`,
+        url: `http://back.fuseable.monster/api/project/create/${userCode}`,
         data: 
           {
             title,
@@ -151,7 +151,7 @@ function Start () {
     try {
       const res = await axios
       .post(
-        `http://back.fuseable.monster:8080/api/project/invite/${userCode}`,
+        `http://back.fuseable.monster/api/project/invite/${userCode}`,
         {
           inviteCode: InviteCode,
         }
@@ -173,7 +173,7 @@ function Start () {
         console.log("userCode : ", userCode);
         const res = await axios
         .get(
-          `http://back.fuseable.monster:8080/api/project/${userCode}`
+          `http://back.fuseable.monster/api/project/${userCode}`
         )
         .then((response) => 
         {

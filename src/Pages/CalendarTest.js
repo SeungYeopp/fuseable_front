@@ -22,7 +22,7 @@ const MyCalendar = () => {
     {try {
       const res = await axios
       .get(
-        `http://back.fuseable.monster:8080/api/project/${userCode}/${selectedProjectId}`
+        `http://back.fuseable.monster/api/project/${userCode}/${selectedProjectId}`
       )
       .then((response) => 
       {

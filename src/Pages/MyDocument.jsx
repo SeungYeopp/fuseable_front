@@ -18,7 +18,7 @@ function MyDocument () {
     {try {
       const res = await axios
       .get(
-        `http://back.fuseable.monster:8080/api/project/main/mynote/${userCode}/${selectedProjectId}`
+        `http://back.fuseable.monster/api/project/main/mynote/${userCode}/${selectedProjectId}`
       )
       .then((response) => 
       {

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const GoogleLogin = () => {
   // 카카오 개발자 앱 키 선언
-  const KAKAO_AUTH_URI = `http://www.fuseable.monster:3000/googleredirect?code=`;
+  const KAKAO_AUTH_URI = `http://www.fuseable.monster/googleredirect?code=`;
   // 인가코드 받아오기
   const code = new URL(window.location.href).searchParams.get("code");
 
@@ -23,7 +23,7 @@ const GoogleLogin = () => {
           // 백엔드 주소 뒤에 인가코드 붙여서 GET 설정
           // 백엔드는 이 주소를 통해 뒤에 붙여져있는 인가코드를 전달 받게 된다.
           .get(
-            `http://back.fuseable.monster:8080/api/login/oauth2/token?code=${code}`
+            `http://back.fuseable.monster/api/login/oauth2/token?code=${code}`
           )
           // 백엔드 쪽에서 보내준 응답 확인
           .then((response) => {
@@ -53,7 +53,7 @@ const GoogleLogin = () => {
           // 이때, post가 아닌 get으로 접근한다.
           // 접근 주소는 백엔드에서 설정한 주소로 한다.
           .get(
-            "http://back.fuseable.monster:8080/api/me",
+            "http://back.fuseable.monster/api/me",
             {
               // 헤더값에는 받아온 토큰을 Authorization과 request 에 담아서 보낸다/
               headers: {

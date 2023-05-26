@@ -66,7 +66,7 @@ function AddListPage () {
     {try {
       const res = await axios
       .get(
-        `http://back.fuseable.monster:8080/api/project/${selectedProjectId}/crews`
+        `http://back.fuseable.monster/api/project/${selectedProjectId}/crews`
       )
       .then((response) => 
       {
@@ -177,7 +177,7 @@ function AddListPage () {
     try {
       const res = await axios
       .post(
-        `http://back.fuseable.monster:8080/api/project/main/${userCode}/${selectedProjectId}`,
+        `http://back.fuseable.monster/api/project/main/${userCode}/${selectedProjectId}`,
         formData,
       )
       .then((response) => {
@@ -279,7 +279,7 @@ function AddListPage () {
     try {
       const res = await axios
       .get(
-        `http://back.fuseable.monster:8080/api/project/invite/${userCode}/${selectedProjectId}`
+        `http://back.fuseable.monster/api/project/invite/${userCode}/${selectedProjectId}`
       )
       .then((response) => {
           console.log("InviteCode: ", response);
@@ -445,7 +445,7 @@ function AddListPage () {
     {try {
       const res = await axios
       .get(
-        `http://back.fuseable.monster:8080/api/project/note/alarmNote/${selectedProjectId}`
+        `http://back.fuseable.monster/api/project/note/alarmNote/${selectedProjectId}`
       )
       .then((response) => 
       {

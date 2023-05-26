@@ -44,7 +44,7 @@ function EditList({item}) {
     try {
       const res = await axios
       .post(
-        `http://back.fuseable.monster:8080/api/project/main/move/${selectedProjectId}`,
+        `http://back.fuseable.monster/api/project/main/move/${selectedProjectId}`,
         {
           newStep: changeProgress,
           arrayId: Selecteditem.arrayId,
@@ -77,7 +77,7 @@ function EditList({item}) {
       // try {
       //   const res = await axios
       //   .post(
-      //     `http://back.fuseable.monster:8080/api/project/main/move/${selectedProjectId}`,
+      //     `http://back.fuseable.monster/api/project/main/move/${selectedProjectId}`,
       //     {
       //       newStep: dragItem.progress,
       //       arrayId: dragIndex,
